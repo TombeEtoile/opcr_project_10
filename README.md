@@ -15,8 +15,8 @@ Sécurité : Utilisation de JWT pour l'authentification, assurant que seules les
 
 ### Clonez ce repository :
 ```bash
-git clone <url-du-repository>
-cd <nom-du-dossier>
+git clone https://github.com/TombeEtoile/opcr_project_10
+cd SoftDesk
 ```
 
 ### Créez un environnement virtuel :
@@ -33,17 +33,17 @@ pip install -r requirements.txt
 
 ### Appliquez les migrations pour configurer la base de données :
 ```bash
-python manage.py migrate
+python3 manage.py migrate
 ```
 
 ### Créez un superutilisateur pour accéder à l'interface d'administration :
 ```bash
-python manage.py createsuperuser
+python3 manage.py createsuperuser
 ```
 
 ### Lancez le serveur de développement :
 ```bash
-python manage.py runserver
+python3 manage.py runserver
 ```
 
 ## Endpoints
