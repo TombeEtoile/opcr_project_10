@@ -116,6 +116,9 @@ Body :
     "username": "exemple",
     "password": "motdepasse",
     "email": "exemple@domaine.com"
+    "age": 18,
+    "can_be_contacted": "True",
+    "can_data_be_shared": "True"
 }
 ```
 
