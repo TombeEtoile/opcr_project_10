@@ -127,6 +127,21 @@ Body :
 DELETE http://127.0.0.1:8000/api/user/delete/
 ```
 
+### Modification de données :
+#### projet
+```bash
+PATCH http://127.0.0.1:8000/api/project/project_id/
+```
+#### problème
+```bash
+PATCH http://127.0.0.1:8000/api/issue/issue_id/
+```
+#### commentaire
+```bash
+PATCH http://127.0.0.1:8000/api/comment/comment_id/
+```
+
+
 ## Sécurité et Permissions
 
 L'API utilise JWT pour l'authentification.
