@@ -50,17 +50,17 @@ python3 manage.py runserver
 
 ### Sommaire des Endpoints
 
-__/ :__ Sommaire des URLs disponibles.
+__/api/ :__ Sommaire des URLs disponibles.
 
-__/project/ :__ Liste des projets.
+__/api/project/ :__ Liste des projets.
 
-__/project/<int:pk>/ :__ Détail d'un projet spécifique.
+__/api/project/<int:pk>/ :__ Détail d'un projet spécifique.
 
-__/issue/ :__ Liste des issues.
+__/api/issue/ :__ Liste des issues.
 
-__/issue/<int:pk>/ :__ Détail d'une issue spécifique.
+__/api/issue/<int:pk>/ :__ Détail d'une issue spécifique.
 
-__/comment/ :__ Liste des commentaires.
+__/api/comment/ :__ Liste des commentaires.
 
 __/api/user/delete/ :__ Suppression de l'utilisateur connecté (droit à l'oubli).
 
@@ -77,21 +77,6 @@ POST __/api/token/ :__ Obtenir un token JWT pour s'authentifier.
 ```
 
 __/api/token/refresh/ :__ Rafraîchir le token JWT.
-
-
-## Dépendances
-
-### Le projet utilise les dépendances suivantes :
-
-```bash
-asgiref==3.8.1
-dj-rest-auth==6.0.0
-Django==5.0.7
-django-cors-headers==4.4.0
-django-filter==24.2
-djangorestframework==3.15.2
-sqlparse==0.5.0
-```
 
 ## Utilisation
 
@@ -186,6 +171,19 @@ Body :
 }
 ```
 
+## Dépendances
+
+### Le projet utilise les dépendances suivantes :
+
+```bash
+asgiref==3.8.1
+dj-rest-auth==6.0.0
+Django==5.0.7
+django-cors-headers==4.4.0
+django-filter==24.2
+djangorestframework==3.15.2
+sqlparse==0.5.0
+```
 
 ## Sécurité et Permissions
 
