@@ -155,9 +155,15 @@ Body :
     "author": "auteur de l'issue",
     "title": "titre de l'issue",
     "description": "exemple de commentaire",
-    "type": "bug"/"features"/"task"
-    "priority": "low"/"medium"/"hard"
-    "status": "to_do"/"in_progress"/"finished"
+    "type": "bug"
+            "features"
+            "task"
+    "priority": "low"
+                "medium"
+                "hard"
+    "status": "to_do"
+              "in_progress"
+              "finished"
 }
 ```
 ##### commentaire
