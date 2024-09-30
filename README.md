@@ -127,18 +127,48 @@ Body :
 DELETE http://127.0.0.1:8000/api/user/delete/
 ```
 
-### Modification de données :
-#### projet
+#### Modification de données :
+##### projet
 ```bash
 PATCH http://127.0.0.1:8000/api/project/project_id/
 ```
-#### problème
+Body :
+```json
+{
+    "author": "auteur du projet",
+    "title": "exemple de titre",
+    "description": "exemple de commentaire",
+    "type": "backend"/"frontend"/"ios"/"android"
+}
+```
+##### problème
 ```bash
 PATCH http://127.0.0.1:8000/api/issue/issue_id/
 ```
-#### commentaire
+Body :
+```json
+{
+    "project": "projet rattaché",
+    "author": "auteur de l'issue",
+    "title": "titre de l'issue",
+    "description": "exemple de commentaire",
+    "type": "bug"/"features"/"task"
+    "priority": "low"/"medium"/"hard"
+    "status": "to_do"/"in_progress"/"finished"
+}
+```
+##### commentaire
 ```bash
 PATCH http://127.0.0.1:8000/api/comment/comment_id/
+```
+Body :
+```json
+{
+    "issue": "issue rattaché",
+    "author": "auteur du projet",
+    "title": "titre du commentaire",
+    "description": "corps du commentaire",
+}
 ```
 
 
