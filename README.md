@@ -68,7 +68,7 @@ __/register/ :__ Enregistrement d'un nouvel utilisateur.
 
 ### Endpoints d'Authentification
 
-__/api/token/ :__ Obtenir un token JWT pour s'authentifier.
+POST __/api/token/ :__ Obtenir un token JWT pour s'authentifier.
 ```json
 {
     "username": "Nom utilisateur",
