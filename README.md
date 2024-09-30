@@ -138,7 +138,7 @@ Body :
     "author": "auteur du projet",
     "title": "exemple de titre",
     "description": "exemple de commentaire",
-    "type": "backend"/"frontend"/"ios"/"android"
+    "type": "backend" / "frontend" / "ios" / "android"
 }
 ```
 ##### problème
